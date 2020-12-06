@@ -5,14 +5,21 @@ const yargs = require("yargs");
 const { join } = require("path");
 const { chdir, cwd } = require("process");
 
-const options = yargs.usage("Usage: -n <name>").option("n", {
-  alias: "compName",
-  describe: "Component name",
-  type: "string",
-  demandOption: true,
-}).argv;
+const options = yargs
+  .usage("Usage: -n <name>")
+  .option("n", {
+    alias: "compName",
+    describe: "Component name",
+    type: "string",
+    demandOption: true,
+  })
+  .option("l", {
+    alias: "language",
+    describe: "Language [js, ts]",
+    type: "string",
+  }).argv;
 
-const createComponent = (compName) => {
+const createComponent = (compName, lang = "js") => {
   if (!fs.existsSync("components")) {
     fs.mkdirSync("components");
   }
@@ -24,9 +31,9 @@ const createComponent = (compName) => {
   fs.mkdirSync(compName);
   console.log("Folder Created :", compName);
 
-  const viewName = `${compName}\\${compName.toLowerCase()}.view.jsx`;
-  const containerName = `${compName}\\${compName.toLowerCase()}.container.jsx`;
-  const indexName = `${compName}\\index.js`;
+  const viewName = `${compName}\\${compName.toLowerCase()}.view.${lang}x`;
+  const containerName = `${compName}\\${compName.toLowerCase()}.container.${lang}x`;
+  const indexName = `${compName}\\index.${lang}`;
 
   const viewContent = `\
 import React from "react";
@@ -69,4 +76,4 @@ export default ${compName};
   });
 };
 
-createComponent(options.compName);
+createComponent(options.compName, options.language);

@@ -1,14 +1,26 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
+const yargs = require("yargs");
 const { join } = require("path");
 const { chdir, cwd } = require("process");
 
-function createComponent(compName) {
+const options = yargs.usage("Usage: -n <name>").option("n", {
+  alias: "compName",
+  describe: "Component name",
+  type: "string",
+  demandOption: true,
+}).argv;
+
+const createComponent = (compName) => {
   if (!fs.existsSync("components")) {
     fs.mkdirSync("components");
   }
   chdir("components");
+  if (fs.existsSync(compName)) {
+    console.log("Folder Already Exists!");
+    return;
+  }
   fs.mkdirSync(compName);
   console.log("Folder Created :", compName);
 
@@ -55,7 +67,6 @@ export default ${compName};
   fs.readdirSync(join(cwd(), compName)).map((filePath) => {
     console.log("  " + join(compName, filePath));
   });
-}
+};
 
-const compName = process.argv.splice(2, 1)[0];
-createComponent(compName);
+createComponent(options.compName);

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
-const { chdir } = require("process");
+const { join } = require("path");
+const { chdir, cwd } = require("process");
 
 function createComponent(compName) {
   if (!fs.existsSync("components")) {
@@ -46,19 +47,13 @@ import ${compName} from "./${compName.toLowerCase()}.container";
 export default ${compName};
   `;
 
-  fs.writeFile(viewName, viewContent, function (err) {
-    if (err) throw err;
-    console.log("View Created : ", viewName);
-  });
+  fs.writeFileSync(viewName, viewContent);
+  fs.writeFileSync(containerName, containerContent);
+  fs.writeFileSync(indexName, indexContent);
 
-  fs.writeFile(containerName, containerContent, function (err) {
-    if (err) throw err;
-    console.log("Container Created : ", containerName);
-  });
-
-  fs.writeFile(indexName, indexContent, function (err) {
-    if (err) throw err;
-    console.log("Index Created");
+  console.log("Created Component : ", compName);
+  fs.readdirSync(join(cwd(), compName)).map((filePath) => {
+    console.log("  " + join(compName, filePath));
   });
 }
 

@@ -15,11 +15,16 @@ const options = yargs
   })
   .option("l", {
     alias: "language",
-    describe: "Language [js, ts]",
+    describe: "Language [js, ts(default)]",
     type: "string",
+  })
+  .option("c", {
+    alias: "component",
+    describe: "Make component [No(default)]",
+    type: "boolean",
   }).argv;
 
-const createComponent = (compName, lang = "js") => {
+const createComponent = (compName, lang = "ts", comp = false) => {
   if (!fs.existsSync("components")) {
     fs.mkdirSync("components");
   }
@@ -61,13 +66,15 @@ export default ${compName};
 `;
 
   const indexContent = `\
-import ${compName} from "./${compName.toLowerCase()}.container";
+import ${compName} from "./${compName.toLowerCase()}.${
+    comp ? "container" : "view"
+  }";
 
 export default ${compName};
   `;
 
   fs.writeFileSync(viewName, viewContent);
-  fs.writeFileSync(containerName, containerContent);
+  if (comp) fs.writeFileSync(containerName, containerContent);
   fs.writeFileSync(indexName, indexContent);
 
   console.log("Created Component : ", compName);
@@ -76,4 +83,4 @@ export default ${compName};
   });
 };
 
-createComponent(options.compName, options.language);
+createComponent(options.compName, options.language, options.c);

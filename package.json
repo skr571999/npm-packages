@@ -1,16 +1,17 @@
 {
-  "name": "create-react-component",
+  "name": "@skr571999/create-react-component",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
   "bin": {
-    "create-react-component": "./index.js"
+    "create-react-component": "index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "yargs": "^16.2.0"
-  }
+  },
+  "devDependencies": {}
 }

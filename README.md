@@ -1,4 +1,4 @@
-# React Create
+# Create React Component
 
 ## Example
 
@@ -17,5 +17,5 @@ npm i -g .
 - Running after installing Globally
 
 ```sh
-react-create -n ComponentName
+create-react-component -n ComponentName
 ```

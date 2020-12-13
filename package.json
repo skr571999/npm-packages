@@ -1,13 +1,11 @@
 {
-  "name": "react-create",
+  "name": "create-react-component",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "bin": {
-    "react-create": "./index.js"
+    "create-react-component": "./index.js"
   },
   "keywords": [],
   "author": "",

@@ -8,7 +8,7 @@ Simple package for creating `React` component.
 npm i -g @skr571999/create-react-component -n ComponentName
 ```
 
-or running without installing
+or Running using `npx`(without Installing)
 
 ```sh
 npx @skr571999/create-react-component -n ComponentName

@@ -5,7 +5,7 @@ Simple package for creating `React` component.
 ## Installing
 
 ```sh
-npm i -g @skr571999/create-react-component -n ComponentName
+npm i -g @skr571999/create-react-component
 ```
 
 or Running using `npx`(without Installing)
@@ -33,7 +33,7 @@ Options:
 
 ```sh
 cd src
-create-react-app -n TextBox -l js
+create-react-component -n TextBox -l js
 
 # will create following component structure
 src
@@ -47,7 +47,7 @@ src
 
 ```sh
 cd src
-create-react-app -n TextBox
+create-react-component -n TextBox
 
 # will create following component structure
 src
@@ -61,7 +61,7 @@ src
 
 ```sh
 cd src
-create-react-app -n TextBox -c
+create-react-component -n TextBox -c
 
 # will create following component structure
 src

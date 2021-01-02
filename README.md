@@ -1,23 +1,23 @@
 # Create React Component
 
-Simple package for creating `React` component.
+A package for creating `React` component for `TS` and `JS`.
 
-## Installing
+## Installation
 
 ```sh
-npm i -g @skr571999/create-react-component
+npm i -g @skr571999/crc
 ```
 
-or Running using `npx`(without Installing)
+or running using `npx` (without Installing)
 
 ```sh
-npx @skr571999/create-react-component -n ComponentName
+npx @skr571999/crc -n ComponentName
 ```
 
 ## Usage/Options
 
 ```sh
-Usage: create-react-component -n <name>
+Usage: crc -n <name>
 
 Options:
       --help       Show help                                       [boolean]
@@ -33,7 +33,7 @@ Options:
 
 ```sh
 cd src
-create-react-component -n TextBox -l js
+crc -n TextBox -l js
 
 # will create following component structure
 src
@@ -47,7 +47,7 @@ src
 
 ```sh
 cd src
-create-react-component -n TextBox
+crc -n TextBox
 
 # will create following component structure
 src
@@ -61,7 +61,7 @@ src
 
 ```sh
 cd src
-create-react-component -n TextBox -c
+crc -n TextBox -c
 
 # will create following component structure
 src

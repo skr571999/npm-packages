@@ -1,30 +1,23 @@
 {
-  "name": "@skr571999/create-react-component",
-  "version": "1.0.3",
-  "description": "Simple package for creating `React` component.",
+  "name": "@skr571999/crc",
+  "version": "0.1.0",
+  "description": "A package for creating `React` component for `TS` and `JS`.",
   "main": "index.js",
   "scripts": {},
   "bin": {
-    "create-react-component": "index.js"
+    "crc": "index.js"
   },
   "keywords": [
     "React",
     "cli",
     "create-react-component",
-    "react-component"
+    "react-component",
+    "crc"
   ],
-  "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "yargs": "^16.2.0"
   },
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skr571999/create-react-component.git"
-  },
-  "bugs": {
-    "url": "https://github.com/skr571999/create-react-component/issues"
-  },
-  "homepage": "https://github.com/skr571999/create-react-component#readme"
+  "author": "Sachin Kumar Rajput <skr571999@gmail.com>"
 }

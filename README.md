@@ -71,3 +71,12 @@ src
         ├── textbox.view.tsx
         └── index.ts
 ```
+
+## Similar Project
+
+- https://github.com/arminbro/generate-react-cli
+
+## TODO
+
+- [ ] Add feature to create (SCSS, model) files
+- [ ] Add feature to create page Ex. pages/Login

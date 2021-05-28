@@ -1,0 +1,23 @@
+{
+  "name": "@skr571999/win",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "win": "index.js"
+  },
+  "keywords": [
+    "Windows",
+    "Speaker",
+    "Mic",
+    "Audio"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "win-audio": "^2.0.2",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {},
+  "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
+  "description": "A package to mute and un-mute speaker and mic."
+}

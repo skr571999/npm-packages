@@ -8,12 +8,6 @@ A package to mute and un-mute speaker and mic.
 npm i -g @skr571999/win
 ```
 
-or running using `npx` (without Installing)
-
-```sh
-npx @skr571999/win -t s
-```
-
 ## Usage/Options
 
 ```sh

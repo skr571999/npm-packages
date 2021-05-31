@@ -24,6 +24,9 @@
     "react-component",
     "crc"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "yargs": "^16.2.0"
   },

@@ -15,7 +15,7 @@
   ],
   "scripts": {},
   "bin": {
-    "crc": "index.js"
+    "crc": "lib/crc.js"
   },
   "keywords": [
     "React",

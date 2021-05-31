@@ -1,0 +1,23 @@
+{
+  "name": "@skr571999/crc",
+  "version": "0.1.0",
+  "description": "A package for creating `React` component for `TS` and `JS`.",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "crc": "index.js"
+  },
+  "keywords": [
+    "React",
+    "cli",
+    "create-react-component",
+    "react-component",
+    "crc"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {},
+  "author": "Sachin Kumar Rajput <skr571999@gmail.com>"
+}

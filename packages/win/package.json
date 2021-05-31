@@ -1,6 +1,6 @@
 {
   "name": "@skr571999/win",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A package to mute and un-mute speaker and mic.",
   "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
   "license": "ISC",
@@ -28,6 +28,5 @@
   "dependencies": {
     "win-audio": "^2.0.2",
     "yargs": "^16.2.0"
-  },
-  "devDependencies": {}
+  }
 }

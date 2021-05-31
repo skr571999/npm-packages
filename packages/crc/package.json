@@ -1,6 +1,6 @@
 {
   "name": "@skr571999/crc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A package for creating `React` component for `TS` and `JS`.",
   "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
   "homepage": "",
@@ -29,6 +29,5 @@
   },
   "dependencies": {
     "yargs": "^16.2.0"
-  },
-  "devDependencies": {}
+  }
 }

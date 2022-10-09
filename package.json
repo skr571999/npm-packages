@@ -1,6 +1,6 @@
 {
   "name": "@skrmain/try",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/skrmain/npm-packages#readme",
   "publishConfig": {
-    "@skrmain:registry": "https://npm.pkg.github.com"
+    "@skrmain:registry": "https://npm.pkg.github.com",
+    "access": "public"
   }
 }

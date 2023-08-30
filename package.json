@@ -1,11 +1,10 @@
 {
   "name": "@skrmain/try",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index",
-    "test": "echo \"Error: no test specified\""
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -20,5 +19,6 @@
   "publishConfig": {
     "@skrmain:registry": "https://npm.pkg.github.com",
     "access": "public"
-  }
+  },
+  "keywords": []
 }

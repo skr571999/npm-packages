@@ -4,11 +4,10 @@
   "description": "> TODO: description",
   "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
   "homepage": "https://github.com/skrmain/npm-packages#readme",
-  "license": "ISC",
-  "main": "lib/mongoose-utils.js",
+  "license": "MIT",
+  "main": "lib/index.ts",
   "directories": {
-    "lib": "lib",
-    "test": "__tests__"
+    "lib": "lib"
   },
   "files": [
     "lib"
@@ -17,10 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/skrmain/npm-packages.git"
   },
-  "scripts": {
-    "test": "node ./__tests__/mongoose-utils.test.js"
-  },
+  "scripts": {},
   "bugs": {
     "url": "https://github.com/skrmain/npm-packages/issues"
+  },
+  "dependencies": {
+    "mongoose": "^7.5.0"
   }
 }

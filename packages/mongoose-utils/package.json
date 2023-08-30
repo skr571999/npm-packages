@@ -5,7 +5,7 @@
   "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
   "homepage": "https://github.com/skrmain/npm-packages#readme",
   "license": "MIT",
-  "main": "lib/index.ts",
+  "main": "build/index.js",
   "directories": {
     "lib": "lib"
   },
@@ -16,11 +16,16 @@
     "type": "git",
     "url": "git+https://github.com/skrmain/npm-packages.git"
   },
-  "scripts": {},
+  "scripts": {
+    "build": "tsc --project ./"
+  },
   "bugs": {
     "url": "https://github.com/skrmain/npm-packages/issues"
   },
   "dependencies": {
     "mongoose": "^7.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
   }
 }

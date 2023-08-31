@@ -5,7 +5,7 @@
   "author": "Sachin Kumar Rajput <skr571999@gmail.com>",
   "homepage": "https://github.com/skrmain/npm-packages#readme",
   "license": "MIT",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "directories": {
     "lib": "lib"
   },

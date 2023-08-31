@@ -22,18 +22,15 @@ export interface QueryOptions {
     };
 }
 
-export interface DbService {
+export interface Service {
+    create: any;
     getOne: any;
     getMany: any;
-    count: any;
-    exists: any;
-    create: any;
     deleteOne: any;
     updateOne: any;
-    getManyUsingUserId: ({}: any) => any;
 }
 
-export class DbServiceWrapper<T> implements DbService {
+export class DbService<T> implements Service {
     private _model: Model<T>;
     constructor(model: Model<T>) {
         this._model = model;

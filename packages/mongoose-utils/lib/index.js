@@ -32,9 +32,9 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getObjectId = exports.executeTransaction = exports.connectDb = exports.getDbModel = exports.getDbSchema = exports.DbServiceWrapper = void 0;
+exports.getObjectId = exports.executeTransaction = exports.connectDb = exports.getDbModel = exports.getDbSchema = exports.DbService = void 0;
 const mongoose_1 = __importStar(require("mongoose"));
-class DbServiceWrapper {
+class DbService {
     constructor(model) {
         this.count = (filter) => this._model.count(filter).lean();
         this.exists = (filter) => this._model.exists(filter).lean();
@@ -67,7 +67,7 @@ class DbServiceWrapper {
         return _query.lean().exec();
     }
 }
-exports.DbServiceWrapper = DbServiceWrapper;
+exports.DbService = DbService;
 const getDbSchema = (schemaDefinition) => {
     return new mongoose_1.Schema(schemaDefinition, { timestamps: true });
 };
